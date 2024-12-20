@@ -1,0 +1,91 @@
+{
+  "basics": {
+    "name": "Pallav Kamad",
+    "label": "Bachelors Student at IIT Delhi",
+    "image": "",
+    "email": "pallavkamad@gmail.com",
+    "phone": "",
+    "url": "http://pallavkamad.me/",
+    "summary": "Motivated and detail-oriented undergraduate student with hands-on experience in machine learning, stochastic processes, and algorithm design. Demonstrated success in implementing innovative solutions across Monte Carlo simulations and cryptographic applications. Proficient in programming languages and frameworks, with a strong foundation in data structures, algorithms, and mathematical modeling. Experienced in mentoring peers and juniors, combining technical expertise with effective communication and collaboration skills.",
+    "location": {
+      "address": "IIT Delhi",
+      "postalCode": "110016",
+      "city": "New Delhi",
+      "countryCode": "IN",
+      "region": "Delhi"
+    },
+    "profiles": [
+      {
+        "network": "LinkedIn",
+        "username": "pallavkamad",
+        "url": "https://www.linkedin.com/in/pallavkamad/"
+      }
+    ]
+  },
+  "volunteer": [],
+  "education": [
+    {
+      "institution": "Indian Institute of Technology, Delhi",
+      "url": "https://home.iitd.ac.in/",
+      "area": "Computer Science Engineering",
+      "studyType": "Bachelor of Technology",
+      "startDate": "2023",
+      "endDate": "present",
+      "score": "",
+      "courses": [
+        "Data Structures and Algorithms",
+        "Machine Learning",
+        "Computer Networks",
+        "Operating Systems",
+        "Probability and Stochastic Processes",
+        "Discrete Mathematics"
+      ]
+    }
+  ],
+  "experience": [
+    {
+    }
+  ],
+  "awards and competitions": [
+    {
+      "title": "JEE Main 2023: 99.98 Percentile — 100 Percentile in Mathematics",
+      "date": "2023",
+      "awarder": "Ranked 188 out of 1,000,000+ candidates"
+    },
+    {
+      "title": "JEE Advanced 2023",
+      "date": "2023",
+      "awarder": "Ranked 475 out of 160,000+ candidates"
+    },
+    {
+      "title": "Fellowship for being in top 1000 students among 1,000,000+ applicants",
+      "date": "2021",
+      "awarder": "National talent Search Examination (NTSE)"
+    },
+    {
+      "title": "Distinctions in ICAS MATHEMATICS/SCIENCE",
+      "date": "2017",
+      "awarder": "UNSW Global Australia"
+    }
+  ],
+  "certificates": [],
+  "publications": [],
+  "skills": [],
+  "languages": [
+    {
+      "language": "English",
+      "fluency": "Fluent"
+    },
+    {
+      "language": "Hindi",
+      "fluency": "Native Speaker"
+    },
+    {
+      "language": "German",
+      "fluency": "Beginner"}
+
+  ],
+  "interests": [],
+  "references": [],
+  "projects": []
+}

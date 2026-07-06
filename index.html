@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pallav — Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav" id="nav">
+    <span class="nav-name" onclick="goHome()">Pallav</span>
+    <div class="nav-right">
+      <button class="nav-icon-btn" onclick="goHome()" title="Home">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9.5L12 3l9 6.5V20a1 1 0 01-1 1H4a1 1 0 01-1-1V9.5z"/><path d="M9 21V12h6v9"/></svg>
+      </button>
+      <div class="dropdown" id="proj-dropdown">
+        <button class="nav-btn" id="proj-btn" onclick="toggleDD(event)">
+          Projects
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+        </button>
+        <div class="dropdown-menu" id="dd-menu">
+          <div class="dd-item" onclick="goTrack('ml')">
+            <span class="dd-dot dd-ml"></span> AI / ML
+          </div>
+          <div class="dd-item" onclick="goTrack('sde')">
+            <span class="dd-dot dd-sde"></span> Systems / SDE
+          </div>
+          <div class="dd-item" onclick="goTrack('finance')">
+            <span class="dd-dot dd-fin"></span> Quant / Finance
+          </div>
+        </div>
+      </div>
+      <a class="nav-btn nav-btn-ghost" href="assets/Pallav_CV.pdf" target="_blank">Resume</a>
+    </div>
+  </nav>
+
+  <!-- HOME PAGE -->
+  <div id="pg-home" class="page active">
+    <div class="hero">
+      <h1>Hi, I'm Pallav</h1>
+      <p>CS undergrad at IIT Delhi. I build things across systems, ML, and quantitative finance.</p>
+      <div class="hero-links">
+        <a class="btn btn-outline" href="https://github.com/Pallav-cseIITD" target="_blank">GitHub</a>
+        <a class="btn btn-outline" href="https://linkedin.com/in/pallav" target="_blank">LinkedIn</a>
+        <a class="btn btn-outline" href="mailto:cs2210xxx@iitd.ac.in">Contact</a>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-label">Pinned projects</div>
+      <div class="pin-grid" id="pin-grid">
+        <!-- rendered by JS from PINNED array in projects.js -->
+      </div>
+      <div class="more-hint">
+        To see all projects click <button class="hint-link" onclick="toggleDD(event)">Projects</button> in the top right
+      </div>
+    </div>
+
+    <div class="section section-exp">
+      <div class="section-label">Experience</div>
+      <div class="exp-row">
+        <div>
+          <div class="exp-title">Quantitative Research Intern <span class="exp-company">· Longshanks Capital</span></div>
+          <div class="exp-desc">Schema-driven strategy allocation framework in Python across a configurable database of financial assets. Studied options pricing theory (Black-Scholes, Greeks).</div>
+        </div>
+        <span class="exp-date">Dec 2025</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- PROJECTS PAGE (reused for all tracks) -->
+  <div id="pg-projects" class="page">
+    <div class="proj-page-header">
+      <button class="back-btn" onclick="goHome()">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+        Home
+      </button>
+      <span class="breadcrumb-sep">/</span>
+      <span class="proj-page-title" id="proj-page-title">Projects</span>
+    </div>
+    <div class="proj-list" id="proj-list">
+      <!-- rendered by JS -->
+    </div>
+  </div>
+
+  <script src="projects.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>

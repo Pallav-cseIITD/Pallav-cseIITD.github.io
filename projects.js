@@ -36,22 +36,22 @@ const PROJECTS = {
     {
       id: "graphrag",
       name: "SEC Knowledge Graph RAG",
-      desc: "Multi-hop reasoning over SEC 10-K filings via LlamaIndex + Neo4j with hybrid retrieval",
+      desc: "Multi hop reasoning over SEC 10-K filings via LlamaIndex + Neo4j with hybrid retrieval",
       bullets: [
-        "Built production-ready GraphRAG over 10-K filings — entity extraction via async LLM pipeline, stored in Neo4j AuraDB",
-        "Hybrid vector-and-graph retrieval with context fencing (temp=0.0) to eliminate hallucinations",
+        "Built production ready GraphRAG over 10-K filings: entity extraction via async LLM pipeline, stored in Neo4j AuraDB",
+        "Hybrid vector & graph retrieval with context fencing (temp=0.0) to eliminate hallucinations",
         "Served structured sub-graphs to Llama-3.3-70B via Groq for compliance and supply chain risk queries"
       ],
       tags: ["GraphRAG", "LLM", "Neo4j", "Groq"],
-      media: { type: "youtube", url: "https://youtu.be/PLACEHOLDER", label: "Demo video" }
+      media: { type: "youtube", url: "assets/demovid_grag.mp4", label: "Demo video" }
     },
     {
       id: "word2vec",
       name: "Word2Vec for Author Attribution",
-      desc: "Skip-gram SGNS from scratch in PyTorch — verification and clustering across unseen authors",
+      desc: "Skip gram SGNS from scratch in PyTorch, verification and clustering across unseen authors",
       bullets: [
-        "Implemented Skip-gram with negative sampling — no pretrained models, trained on multi-author corpora",
-        "TF-IDF weighted embedding aggregation for author-level representations",
+        "Implemented Skip-gram with negative sampling: no pretrained models, trained on multi-author corpora",
+        "TF-IDF weighted embedding aggregation for author level representations",
         "Evaluated on MRR (verification) and Hungarian-matched accuracy (clustering) across unseen authors"
       ],
       tags: ["NLP", "PyTorch", "KMeans++", "MRR"],
@@ -60,19 +60,19 @@ const PROJECTS = {
     {
       id: "lime-shap",
       name: "Credit Risk Explainability",
-      desc: "LIME & SHAP on XGBoost classifier — fairness violations in black-box credit risk models",
+      desc: "LIME & SHAP on XGBoost classifier: fairness violations in black-box credit risk models",
       bullets: [
-        "XGBoost on UCI German Credit — 78%+ accuracy with full decision transparency",
-        "LIME for instance-level, SHAP for global attribution — compared both frameworks",
+        "XGBoost on UCI German Credit: 78%+ accuracy with full decision transparency",
+        "LIME for instance level, SHAP for global attribution. compared both frameworks",
         "Identified demographic feature dominance invisible to accuracy metrics alone"
       ],
       tags: ["xAI", "SHAP", "XGBoost", "Fairness"],
       media: { type: "images", urls: ["assets/shap_summary.png", "assets/lime_exp.png"], labels: ["SHAP summary", "LIME explanation"] }
     },
     {
-      id: "forest-fire",
+      id: "forest fire",
       name: "Forest Fire Route Blocking",
-      desc: "Stochastic influence minimisation — submodularity, greedy approx, Monte Carlo at 150k nodes",
+      desc: "Stochastic influence minimisation, submodularity, greedy approx, Monte Carlo at 150k nodes",
       bullets: [
         "Modelled wildfire containment as stochastic influence minimisation on directed graphs",
         "Proved NP-hardness via Min-Cut reduction; analysed submodularity for approximation guarantees",
@@ -87,9 +87,9 @@ const PROJECTS = {
     {
       id: "interpreter",
       name: "Toy Language Interpreter",
-      desc: "Full-pipeline OCaml interpreter — lexer, recursive descent parser, unification, backtracking",
+      desc: "Full pipeline OCaml interpreter — lexer, recursive descent parser, unification, backtracking",
       bullets: [
-        "Engineered from scratch — lexical analysis, recursive descent parsing, AST construction",
+        "Engineered from scratch: lexical analysis, recursive descent parsing, AST construction",
         "Implemented unification algorithm and chronological backtracking for Horn clause resolution"
       ],
       tags: ["OCaml", "Compilers", "PL"],
@@ -100,9 +100,9 @@ const PROJECTS = {
       name: "Swap Space & Page Replacement",
       desc: "xv6 kernel with disk-backed swap, clock replacement policy, and demand paging",
       bullets: [
-        "Extended xv6 with disk-backed swap and demand paging under physical memory pressure",
-        "Second-chance (clock) replacement using PTE accessed bits to approximate LRU",
-        "Page fault trap dispatch to lazy-load swapped pages; swap-slot metadata encoded in invalid PTEs"
+        "Extended xv6 with disk backed swap and demand paging under physical memory pressure",
+        "Second chance (clock) replacement using PTE accessed bits to approximate LRU",
+        "Page fault trap dispatch to lazy load swapped pages; swap slot metadata encoded in invalid PTEs"
       ],
       tags: ["OS", "C", "xv6", "Kernel"],
       media: null
@@ -113,7 +113,7 @@ const PROJECTS = {
       desc: "TCP-equivalent transport over UDP — SACK, fast retransmit, Reno congestion control",
       bullets: [
         "Sliding window flow control, SACK-based loss recovery, adaptive RTO (Jacobson/Karels)",
-        "Reno congestion control — slow start, congestion avoidance, fast recovery",
+        "Reno congestion control: slow start, congestion avoidance, fast recovery",
         "Evaluated throughput, link utilisation, and Jain's fairness index in Mininet"
       ],
       tags: ["Networks", "C", "Mininet"],
@@ -122,10 +122,10 @@ const PROJECTS = {
     {
       id: "spreadsheet",
       name: "Terminal Spreadsheet",
-      desc: "CLI tool with formula parsing, dependency tracking, topological sort — 60% latency reduction",
+      desc: "CLI tool with formula parsing, dependency tracking, topological sort: 60% latency reduction",
       bullets: [
-        "Interactive CLI/GUI with formula parsing and real-time updates for 500+ cells",
-        "Optimised recompute via topological sort — 60% latency reduction"
+        "Interactive CLI/GUI with formula parsing and real time updates for 500+ cells",
+        "Optimised recompute via topological sort: 60% latency reduction"
       ],
       tags: ["Systems", "DAG", "C"],
       media: { type: "video", url: "assets/spreadsheet_demo.mp4", label: "Screen recording" }
@@ -133,9 +133,9 @@ const PROJECTS = {
     {
       id: "game-bot",
       name: "Game-Playing AI Bot",
-      desc: "Minimax + alpha-beta pruning + iterative deepening for a zero-sum adversarial game",
+      desc: "Minimax + alpha-beta pruning + iterative deepening for a zero sum adversarial game",
       bullets: [
-        "Anytime behaviour via iterative deepening — always returns best move found before timeout",
+        "Anytime behaviour via iterative deepening: always returns best move found before timeout",
         "Move ordering heuristics to maximise alpha-beta cutoffs for deeper ply search",
         "Competed in class-wide knockout tournament evaluated on win/loss and margin score"
       ],
@@ -160,7 +160,7 @@ const PROJECTS = {
     {
       id: "order-book",
       name: "Low-Latency Order Book Engine",
-      desc: "C++ price-time priority matching engine — lock-free vs mutex benchmarks under sustained load",
+      desc: "C++ price-time priority matching engine: lock-free vs mutex benchmarks under sustained load",
       bullets: [
         "Price-time priority matching with concurrent order insert, cancel, and match",
         "Benchmarked mutex vs lock-free (std::atomic CAS) — Xns median latency, X× improvement",
@@ -172,14 +172,14 @@ const PROJECTS = {
     {
       id: "graphrag-fin",
       name: "SEC Knowledge Graph RAG",
-      desc: "Financial document intelligence — entity extraction from 10-K filings for supply chain risk",
+      desc: "Financial document intelligence: entity extraction from 10-K filings for supply chain risk",
       bullets: [
         "Extracted company, supplier, and regulatory entities from SEC filings via async LLM pipeline",
         "Multi-hop graph queries for supply chain exposure and regulatory risk analysis",
         "Hybrid retrieval with hallucination elimination via strict context fencing"
       ],
       tags: ["FinNLP", "RAG", "Neo4j"],
-      media: { type: "youtube", url: "https://youtu.be/PLACEHOLDER", label: "Demo video" }
+      media: { type: "youtube", url: "assets/demovid_grag.mp4", label: "Demo video" }
     },
     {
       id: "lime-shap-fin",
